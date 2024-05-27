@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="clock">
+     <div class="hour"  id="hr"></div>
+     <div class="minut" id="mnt"></div>
+     <div class="seceond" id="sec"></div>
+    </div>
+
+    <script>
+        setInterval(function clock(){
+            var d=new Date();
+            var s=d.getSeconds()*6;
+            var m=d.getMinutes()*6+(s/60);
+            var h=d.getHours()*30+(m/12);
+            document.getElementById("hr").style.transform="rotate("+h+"deg)";
+            document.getElementById("mnt").style.transform="rotate("+m+"deg)";
+            document.getElementById("sec").style.transform="rotate("+s+"deg)";
+            
+        },1000);
+        
+    </script> 
+</body>
+</html>

@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #018DED ;
+
+}
+
+.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #018DED ;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-top: 150px;
+    border: 20px solid #fff;
+    position: relative;
+
+}
+.hour,.minut,.seceond{
+    width: 6px;
+    height: 135px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform-origin:bottom ;
+}
+
+    
+
+
+
+
+
+    
